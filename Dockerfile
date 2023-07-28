@@ -9,4 +9,4 @@ COPY . .
 RUN --mount=type=cache,target=/root/.cache \
   pip install chatdocs 
 
-ENTRYPOINT chatdocs download && chatdocs chat
+ENTRYPOINT chatdocs download && chatdocs add /app/docs && chatdocs chat
