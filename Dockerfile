@@ -8,6 +8,6 @@ COPY chatdocs/ chatdocs/
 COPY setup.py .
 
 RUN --mount=type=cache,target=/root/.cache \
-  pip install chatdocs 
+  pip install tabulate chatdocs 
 
 ENTRYPOINT chatdocs download && chatdocs add /app/docs && chatdocs chat
