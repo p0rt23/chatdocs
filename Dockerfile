@@ -2,7 +2,8 @@ FROM python:3-slim-bookworm
 
 RUN apt-get update && apt-get install -y \
   build-essential \
-  libreoffice-writer
+  libreoffice-writer \
+  libreoffice-java-common
 
 WORKDIR /app
 COPY chatdocs/ chatdocs/
