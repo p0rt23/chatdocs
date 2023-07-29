@@ -18,6 +18,6 @@ COPY setup.py .
 COPY chatdocs.yml .
 
 RUN --mount=type=cache,target=/root/.cache \
-  pip install tabulate chatdocs chatdocs[gptq]
+  pip install tabulate chatdocs chatdocs[gptq] xformers
 
 ENTRYPOINT chatdocs download && chatdocs add /app/docs && chatdocs chat -c /app

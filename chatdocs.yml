@@ -1,4 +1,9 @@
-# llm: gptq
+#llm: gptq
 llm: ctransformers
+
+gptq:
+  model: TheBloke/Wizard-Vicuna-7B-Uncensored-GPTQ
+  # Name has changed away from the chatdocs defaults in the repo
+  model_file: Wizard-Vicuna-7B-Uncensored-GPTQ-4bit-128g.no-act.order.safetensors
 
 download: true

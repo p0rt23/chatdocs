@@ -6,5 +6,6 @@ docker run --rm -it \
 	-v ~/.chatdocs:/app/docs \
 	--cpus=4 \
 	--memory=32g \
+	--shm-size=4g \
 	--name chatdocs \
 	p0rt23/chatdocs
