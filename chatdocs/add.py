@@ -115,6 +115,7 @@ def process_documents(
         print("No new documents to load")
         exit(0)
     print(f"Loaded {len(documents)} new documents from {source_directory}")
+    print("\n".join("\t* " + i.metadata["source"] for i in documents))
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     texts = text_splitter.split_documents(documents)
     return texts

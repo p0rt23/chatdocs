@@ -1,0 +1,4 @@
+# llm: gptq
+llm: ctransformers
+
+download: true
